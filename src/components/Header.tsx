@@ -16,11 +16,19 @@ const Header = () => {
         {isUser ? (
           <UserMenu />
         ) : (
-          <nav className="flex items-center gap-4">
-            <Link to="/login" className="btn btn-ghost-otline btn-sm">
-              Zaloguj się
-            </Link>
-          </nav>
+          <div className="flex gap-4 justify-space-between">
+            <nav className="flex items-center gap-4">
+              <Link to="/login" className="btn btn-ghost-otline btn-sm">
+                Zaloguj się
+              </Link>
+            </nav>
+
+            <nav className="flex items-center gap-4">
+              <Link to="/register" className="btn btn-primary btn-sm">
+                Załóż konto
+              </Link>
+            </nav>
+          </div>
         )}
       </div>
     </header>
