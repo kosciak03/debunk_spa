@@ -20,6 +20,13 @@ const PostCard = ({ post }: PostCardProps) => {
             <div>
                 <h2 className="card-title text-base-content">{post.title}</h2>
             </div>
+    <article className="card bg-base-100 shadow-md">
+      <div className="card-body">
+        <h2 className="card-title">{post.title}</h2>
+        <p className="text-base-content/80">{post.content}</p>
+        <div className="flex justify-between items-center mt-4 text-sm text-base-content/60">
+          <span>{post.user.email}</span>
+          <span>{formattedDate}</span>
         </div>
 
         <div className="divider my-2"></div>
